@@ -1,16 +1,42 @@
-/*Custom properties*/
+/*CUSTOM PROPERTIES*/
 :root{
     --bg-color: pink;
     --primary-color: brown;
 }
 
-/*Reset*/
+/*RESET*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: var(--bg-color);
+/*FLEXBOX*/
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+/*HEADER*/
+nav{
+
+}
+
+header{
+
+}
+
+/*CONTENT*/
+main{
+
+}
+
+aside{
+
+}
+
+/*FOOTER*/
+footer{
+    
 }
