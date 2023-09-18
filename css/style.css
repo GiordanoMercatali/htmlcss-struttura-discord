@@ -82,12 +82,55 @@ header{
 }
 
 /*CONTENT*/
+/*Main*/
 main{
-
+    width: 100%;
+    height: 60rem;
 }
 
-aside{
+.flex-main-portion{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    height: 500px;
+}
 
+.flex-main-portion.graybg{
+    background-color: gray;
+}
+
+.flex-content{
+    width: 80%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-content-section{
+    width: calc(100% / 3);
+    height: 250px;
+    border: 2px dashed black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-content-section.pinkbg{
+    background-color: lightpink;
+}
+
+.flex-content-section.bluebg{
+    background-color: cyan;
+    flex-grow: 1;
+}
+
+.flex-content-section.greenbg{
+    background-color: green;
+    width: 100%;
+    height: 400px;
 }
 
 /*FOOTER*/
