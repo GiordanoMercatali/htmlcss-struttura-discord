@@ -23,7 +23,7 @@
 /*HEADER*/
 header{
     width: 100%;
-    height: 480px;
+    height: 600px;
     background-color: darkblue;
 }   
 /*Nav*/
@@ -69,7 +69,7 @@ nav{
 
 .hero{
     width: 100%;
-    height: 400px;
+    height: 500px;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -95,22 +95,20 @@ main{
     width: 100%;
 }
 
-.flex-main-portion{
+/*MAIN SECTION*/
+.main-section{
     display: flex;
     width: 100%;
     margin: auto;
-    height: 500px;
+    height: 600px;
 }
 
-.flex-main-portion.graybg{
+.main-section.graybg{
     background-color: gray;
 }
 
-.flex-main-portion.darkbg{
-    background-color: rgb(50, 50, 50);
-}
-
-.flex-content{
+/*MAIN CONTENT*/
+.main-content{
     width: 80%;
     margin: 5rem auto;
     display: flex;
@@ -118,8 +116,8 @@ main{
     justify-content: center;
     align-items: center;
 }
-
-.flex-content-section{
+/*MAIN CONTENT COLUMNS*/
+.main-content-column{
     width: calc(100% / 3);
     height: 250px;
     border: 2px dashed black;
@@ -129,64 +127,54 @@ main{
     align-items: center;
 }
 
-.flex-content-section.pinkbg{
+.main-content-column.pinkbg{
     background-color: lightpink;
 }
 
-.flex-content-section.bluebg{
+.main-content-column.bluebg{
     background-color: blue;
     flex-grow: 1;
 }
 
-.flex-content-section.greenbg{
+.main-content-column.greenbg{
     background-color: green;
-    width: 100%;
-    height: 400px;
+    width: 80%;
+    height: 500px;
 }
 
 
 /*FOOTER*/
 footer{
     width: 100%;
-    height: 60rem;
+    height: 600px;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     background-color: rgb(50, 50, 50);
 }
 
-.flex-foot-section.cyanbg{
-    background-color: cyan;
-    border: 2px dashed white;
-}
-
-.flex-foot-section.salmonbg{
-    background-color: salmon;
-    flex-grow: 1;
-}
-
-.flex-foot-portion{
+.footer-top{
     display: flex;
     width: 100%;
-    height: 6rem;
-    margin: auto;
+    height: 400px;
+    margin: 50px auto;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .flex-foot{
     width: calc(100% / 3);
-    height: 250px;
+    height: 100%;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    align-self: flex-end;
+    align-self: flex-end; */
 }
 
-.flex-foot-section{
+.foot-column{
     width: 100px;
-    height: 2rem;
+    height: 100%;
     background-color: white;
     border: 2px dashed black;
     display: flex;
@@ -195,7 +183,28 @@ footer{
     align-items: center;
 }
 
-.flex-ending{
+.foot-column.cyanbg{
+    background-color: cyan;
+    border: 2px dashed white;
+}
+
+.foot-column.salmonbg{
+    background-color: salmon;
+    flex-grow: 1;
+}
+
+.footer-bottom{
+    display: flex;
+    width: 100%;
+    height: 6rem;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    border-top: 1px solid white;
+}
+
+.ending{
     width: 60%;
     height: 4rem;
     display: flex;
@@ -206,7 +215,7 @@ footer{
     align-self: flex-end;
 }
 
-.flex-ending-section{
+.ending-item{
     width: 100px;
     height: 2rem;
     background-color: white;
